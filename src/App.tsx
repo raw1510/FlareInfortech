@@ -100,7 +100,7 @@ function App() {
               {/* HTML Tag */}
               <div className="absolute top-1/4 left-1/4 animate-float">
                 <div className="bg-accent/20 backdrop-blur-sm rounded-lg p-3 border border-accent/30">
-                  <span className="text-accent font-mono text-sm"><html></span>
+                  <span className="text-accent font-mono text-sm">&lt;html&gt;</span>
                 </div>
               </div>
               
@@ -123,7 +123,7 @@ function App() {
               {/* Code Symbol */}
               <div className="absolute bottom-1/4 right-1/3 animate-float" style={{animationDelay: '0.5s'}}>
                 <div className="bg-green-500/20 backdrop-blur-sm rounded-lg p-3 border border-green-500/30">
-                  <span className="text-green-400 font-mono text-sm"></></span>
+                  <span className="text-green-400 font-mono text-sm">&lt;/&gt;</span>
                 </div>
               </div>
             </div>
