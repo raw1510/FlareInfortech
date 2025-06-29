@@ -371,21 +371,229 @@ function App() {
           </div>
         </section>
 
-        <section id="services" className="services">
-          <div className="container">
-            <h2>Our Services</h2>
-            <div className="services-grid">
-              <div className="service-card">
-                <h3>Web Development</h3>
-                <p>Custom web applications built with modern technologies</p>
+        <section id="services" className="py-20 bg-gradient-to-br from-dark via-gray-800 to-secondary relative overflow-hidden">
+          {/* Background Elements */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-1/3 right-1/3 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse"></div>
+            
+            {/* Floating Code Elements */}
+            <div className="absolute top-1/3 right-1/4 animate-float opacity-20">
+              <div className="bg-accent/20 backdrop-blur-sm rounded-lg p-2 border border-accent/30">
+                <span className="text-accent font-mono text-xs">&lt;div&gt;</span>
               </div>
-              <div className="service-card">
-                <h3>React Development</h3>
-                <p>Single page applications with optimal performance</p>
+            </div>
+            <div className="absolute bottom-1/4 left-1/5 animate-float opacity-20" style={{animationDelay: '1.5s'}}>
+              <div className="bg-primary/20 backdrop-blur-sm rounded-lg p-2 border border-primary/30">
+                <span className="text-primary font-mono text-xs">( )</span>
               </div>
-              <div className="service-card">
-                <h3>UI/UX Design</h3>
-                <p>Beautiful and intuitive user interfaces</p>
+            </div>
+          </div>
+
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            {/* Section Header */}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6">
+                <span className="text-white text-sm font-medium">🚀 Our Services</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                What We 
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Create</span>
+              </h2>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                From concept to deployment, we craft digital solutions that drive growth and deliver exceptional user experiences.
+              </p>
+            </div>
+
+            {/* Services Grid */}
+            <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+              {/* Web Development */}
+              <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 hover:border-primary/50 transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">Web Development</h3>
+                <p className="text-gray-300 mb-6 leading-relaxed">Custom websites built with modern technologies. Responsive, fast, and SEO-optimized to convert visitors into customers.</p>
+                <ul className="space-y-2 text-sm text-gray-400">
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
+                    <span>React, Next.js, Vue.js</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
+                    <span>E-commerce Solutions</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                    <span>CMS & Admin Panels</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Mobile App Development */}
+              <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 hover:border-accent/50 transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-gradient-to-br from-accent to-yellow-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zM6 4a1 1 0 011-1h6a1 1 0 011 1v10a1 1 0 01-1 1H7a1 1 0 01-1-1V4z" clipRule="evenodd"></path>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">Mobile Apps</h3>
+                <p className="text-gray-300 mb-6 leading-relaxed">Native iOS and Android applications that provide seamless user experiences and drive engagement on mobile platforms.</p>
+                <ul className="space-y-2 text-sm text-gray-400">
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
+                    <span>React Native, Flutter</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
+                    <span>iOS & Android Native</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                    <span>App Store Deployment</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* UI/UX Design */}
+              <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 hover:border-green-500/50 transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h2a2 2 0 002-2V5z"></path>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">UI/UX Design</h3>
+                <p className="text-gray-300 mb-6 leading-relaxed">Beautiful, intuitive designs that create memorable user experiences and drive conversions through thoughtful interaction design.</p>
+                <ul className="space-y-2 text-sm text-gray-400">
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
+                    <span>User Research & Testing</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
+                    <span>Figma & Adobe Creative</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                    <span>Brand Identity Design</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Backend Development */}
+              <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 hover:border-purple-500/50 transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">Backend Development</h3>
+                <p className="text-gray-300 mb-6 leading-relaxed">Robust server-side solutions, APIs, and database architectures that scale with your business and ensure optimal performance.</p>
+                <ul className="space-y-2 text-sm text-gray-400">
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
+                    <span>Node.js, Python, PHP</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
+                    <span>REST & GraphQL APIs</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                    <span>Database Design</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* AI Automations */}
+              <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 hover:border-blue-400/50 transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 5H6a2 2 0 00-2 2v10a2 2 0 002 2h5m7-4l-4-4m0 0l4-4m-4 4H9"></path>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">AI Automations</h3>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  Intelligent automation solutions powered by AI that streamline workflows, reduce manual work, and boost efficiency across your operations.
+                </p>
+                <ul className="space-y-2 text-sm text-gray-400">
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
+                    <span>Process Automation</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
+                    <span>AI Chatbots & Assistants</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                    <span>No-Code/Low-Code Solutions</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* SEO Optimization */}
+              <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 hover:border-blue-400/50 transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-rose-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">SEO Optimization</h3>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  We help your business rank higher on Google with proven SEO strategies, boosting visibility, organic traffic, and conversions.
+                </p>
+                <ul className="space-y-2 text-sm text-gray-400">
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
+                    <span>Technical & On-Page SEO</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
+                    <span>Keyword & Competitor Analysis</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                    <span>Speed Optimization & Schema Markup</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Process Section */}
+            <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/10">
+              <h3 className="text-3xl font-bold text-white text-center mb-12">Our Development Process</h3>
+              <div className="grid md:grid-cols-4 gap-8">
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-white font-bold text-xl">1</span>
+                  </div>
+                  <h4 className="text-white font-semibold mb-2">Discovery</h4>
+                  <p className="text-gray-400 text-sm">Understanding your goals and requirements</p>
+                </div>
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-white font-bold text-xl">2</span>
+                  </div>
+                  <h4 className="text-white font-semibold mb-2">Design</h4>
+                  <p className="text-gray-400 text-sm">Creating wireframes and visual concepts</p>
+                </div>
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-white font-bold text-xl">3</span>
+                  </div>
+                  <h4 className="text-white font-semibold mb-2">Development</h4>
+                  <p className="text-gray-400 text-sm">Building with cutting-edge technologies</p>
+                </div>
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-white font-bold text-xl">4</span>
+                  </div>
+                  <h4 className="text-white font-semibold mb-2">Launch</h4>
+                  <p className="text-gray-400 text-sm">Deployment and ongoing support</p>
+                </div>
               </div>
             </div>
           </div>
