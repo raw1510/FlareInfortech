@@ -100,7 +100,7 @@ function App() {
               {/* HTML Tag */}
               <div className="absolute top-1/4 left-1/4 animate-float">
                 <div className="bg-accent/20 backdrop-blur-sm rounded-lg p-3 border border-accent/30">
-                  <span className="text-accent font-mono text-sm">&lt;html&gt;</span>
+                  <span className="text-accent font-mono text-sm"><html></span>
                 </div>
               </div>
               
@@ -123,7 +123,7 @@ function App() {
               {/* Code Symbol */}
               <div className="absolute bottom-1/4 right-1/3 animate-float" style={{animationDelay: '0.5s'}}>
                 <div className="bg-green-500/20 backdrop-blur-sm rounded-lg p-3 border border-green-500/30">
-                  <span className="text-green-400 font-mono text-sm">&lt;/&gt;</span>
+                  <span className="text-green-400 font-mono text-sm"></></span>
                 </div>
               </div>
             </div>
@@ -215,10 +215,159 @@ function App() {
           </div>
         </section>
 
-        <section id="about" className="about">
-          <div className="container">
-            <h2>About Us</h2>
-            <p>We create modern, fast, and responsive web applications using React.js</p>
+        <section id="about" className="py-20 bg-gradient-to-br from-light via-white to-blue-50 relative overflow-hidden">
+          {/* Background Elements */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-1/3 left-1/3 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-pulse"></div>
+          </div>
+
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              
+              {/* Left Content */}
+              <div className="space-y-8">
+                {/* Section Badge */}
+                <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full">
+                  <span className="text-primary text-sm font-medium">💡 About Flare Infotech</span>
+                </div>
+
+                {/* Headline */}
+                <div className="space-y-6">
+                  <h2 className="text-4xl md:text-5xl font-bold text-dark leading-tight">
+                    We Turn Your 
+                    <span className="text-primary"> Vision</span> Into 
+                    <span className="text-accent"> Reality</span>
+                  </h2>
+                  <p className="text-xl text-gray-600 leading-relaxed">
+                    At Flare Infotech, we're passionate about creating digital solutions that make a real impact. 
+                    Our team combines technical expertise with creative thinking to deliver exceptional results.
+                  </p>
+                </div>
+
+                {/* Key Points */}
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                      <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-dark mb-2">Innovation First</h3>
+                      <p className="text-gray-600">We stay ahead of technology trends to deliver cutting-edge solutions that give you a competitive advantage.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                      <svg className="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-dark mb-2">Fast & Reliable</h3>
+                      <p className="text-gray-600">Quick turnaround times without compromising quality. We respect deadlines and deliver on our promises.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                      <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-dark mb-2">Client-Centric</h3>
+                      <p className="text-gray-600">Your success is our success. We work closely with you throughout the entire development process.</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* CTA Button */}
+                <div className="pt-4">
+                  <button className="bg-primary hover:bg-secondary text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 flex items-center space-x-2">
+                    <span>Learn More About Us</span>
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              {/* Right Visual */}
+              <div className="relative">
+                {/* Main Image Container */}
+                <div className="relative">
+                  <div className="bg-gradient-to-br from-primary to-secondary rounded-3xl p-8 shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                    <div className="bg-white rounded-2xl p-8 space-y-6">
+                      {/* Team Representation */}
+                      <div className="text-center space-y-4">
+                        <div className="flex justify-center space-x-4">
+                          <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
+                            <span className="text-white font-bold text-lg">FI</span>
+                          </div>
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold text-dark">Flare Infotech Team</h3>
+                          <p className="text-gray-600">Passionate Developers & Designers</p>
+                        </div>
+                      </div>
+
+                      {/* Stats */}
+                      <div className="grid grid-cols-3 gap-4 text-center">
+                        <div>
+                          <div className="text-2xl font-bold text-primary">50+</div>
+                          <div className="text-sm text-gray-600">Projects</div>
+                        </div>
+                        <div>
+                          <div className="text-2xl font-bold text-accent">25+</div>
+                          <div className="text-sm text-gray-600">Clients</div>
+                        </div>
+                        <div>
+                          <div className="text-2xl font-bold text-green-500">3+</div>
+                          <div className="text-sm text-gray-600">Years</div>
+                        </div>
+                      </div>
+
+                      {/* Tech Stack Icons */}
+                      <div className="flex justify-center space-x-3 pt-4">
+                        <div className="w-8 h-8 bg-orange-500 rounded flex items-center justify-center">
+                          <span className="text-white text-xs font-bold">JS</span>
+                        </div>
+                        <div className="w-8 h-8 bg-blue-500 rounded flex items-center justify-center">
+                          <span className="text-white text-xs font-bold">RT</span>
+                        </div>
+                        <div className="w-8 h-8 bg-green-600 rounded flex items-center justify-center">
+                          <span className="text-white text-xs font-bold">ND</span>
+                        </div>
+                        <div className="w-8 h-8 bg-purple-500 rounded flex items-center justify-center">
+                          <span className="text-white text-xs font-bold">FL</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Floating Achievement Badge */}
+                  <div className="absolute -top-6 -right-6 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 transform -rotate-12 hover:rotate-0 transition-transform duration-500">
+                    <div className="text-center">
+                      <div className="w-12 h-12 bg-gradient-to-br from-accent to-yellow-500 rounded-full flex items-center justify-center mb-2 mx-auto">
+                        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                      </div>
+                      <div className="text-xs font-semibold text-dark">Quality</div>
+                      <div className="text-xs text-gray-600">Assured</div>
+                    </div>
+                  </div>
+
+                  {/* Floating Elements */}
+                  <div className="absolute -bottom-4 -left-4 w-8 h-8 bg-primary rounded-full animate-bounce"></div>
+                  <div className="absolute top-1/3 -right-8 w-6 h-6 bg-accent rounded-full animate-pulse"></div>
+                  <div className="absolute -top-2 left-1/3 w-4 h-4 bg-green-500 rounded-full animate-ping"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
